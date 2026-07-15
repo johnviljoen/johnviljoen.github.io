@@ -1,0 +1,10 @@
+# Software listed under the "Software" section. Newest first (by year).
+- title: sample-project
+  year: 2026
+  description: One line on what it does. Replace with a real project.
+  url: "https://github.com/johnviljoen"
+
+- title: another-project
+  year: 2025
+  description: Another one-line description.
+  url: "https://github.com/johnviljoen"

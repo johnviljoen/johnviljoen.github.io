@@ -1,20 +1,10 @@
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark">JV</span>
-      <span class="brand-name">{{ site.title }}</span>
-    </a>
-
-    <nav class="site-nav" aria-label="Primary">
-      <a href="{{ '/#about' | relative_url }}">About</a>
-      <a href="{{ '/projects/' | relative_url }}">Projects</a>
-      <a href="{{ '/publications/' | relative_url }}">Publications</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-    </nav>
-
-    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
-      <span class="i-sun">{% include icon.html name="sun" %}</span>
-      <span class="i-moon">{% include icon.html name="moon" %}</span>
-    </button>
-  </div>
+<header class="site wrap">
+  <div class="name">{{ site.title }}</div>
+  <div class="role">{{ site.tagline }}</div>
+  <nav>
+    <a href="{{ '/#about' | relative_url }}">about</a>
+    <a href="{{ '/#research' | relative_url }}">research</a>
+    <a href="{{ '/#software' | relative_url }}">software</a>
+    <a href="{{ '/#blog' | relative_url }}">blog</a>
+  </nav>
 </header>

@@ -1,0 +1,18 @@
+# Research listed under the "Research" section. Newest first (by year).
+- title: "A placeholder title for your first paper"
+  authors: "J. Viljoen, A. Coauthor"
+  venue: "Conference or Journal"
+  year: 2026
+  links:
+    - name: pdf
+      url: "#"
+    - name: arXiv
+      url: "#"
+
+- title: "Another representative publication title"
+  authors: "A. Coauthor, J. Viljoen"
+  venue: "Workshop or Journal"
+  year: 2025
+  links:
+    - name: pdf
+      url: "#"
