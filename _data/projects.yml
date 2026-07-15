@@ -1,0 +1,31 @@
+# Projects shown on /projects/ and (if featured) on the home page.
+# Replace these placeholders with your real work.
+- title: Sample Project One
+  featured: true
+  year: 2026
+  description: >-
+    A short one-to-two sentence pitch of what this project does and why it
+    matters. Replace with a real project.
+  tags: [Python, Research, Open Source]
+  url: "https://github.com/johnviljoen"
+  repo: "https://github.com/johnviljoen"
+
+- title: Sample Project Two
+  featured: true
+  year: 2025
+  description: >-
+    Another placeholder. Describe the problem, your approach, and the outcome
+    in plain language.
+  tags: [ML, PyTorch]
+  url: "https://github.com/johnviljoen"
+  repo: "https://github.com/johnviljoen"
+
+- title: Sample Project Three
+  featured: false
+  year: 2024
+  description: >-
+    A non-featured project — it appears on the Projects page but not on the
+    home highlights.
+  tags: [Web, JavaScript]
+  url: "https://github.com/johnviljoen"
+  repo: "https://github.com/johnviljoen"

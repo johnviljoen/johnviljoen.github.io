@@ -1,0 +1,116 @@
+---
+layout: default
+title: John Viljoen
+description: PhD student at UC Berkeley — research, projects, and writing.
+---
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="pulse"></span> PhD student &middot; UC Berkeley</span>
+    <h1>Hi, I'm John —<br>I build and study <span class="grad">intelligent systems</span>.</h1>
+    <p class="lede">
+      I'm a PhD student at UC&nbsp;Berkeley working at the intersection of research and
+      engineering. <em>(Replace this line with a sentence about what you actually work on
+      and care about.)</em>
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#about">About me {% include icon.html name="arrow" %}</a>
+      <a class="btn btn-ghost" href="{{ '/projects/' | relative_url }}">See my work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="wrap">
+  <div class="section-head reveal"><h2><span class="num">01</span>About</h2></div>
+  <div class="about-grid">
+    <div class="about-body reveal">
+      <p>
+        I'm <strong>John Viljoen</strong>, a PhD student at the University of California,
+        Berkeley. <em>Replace this paragraph with your story:</em> what you research, the
+        questions that pull you in, and the kind of problems you like to work on.
+      </p>
+      <p>
+        Before Berkeley I <em>… (education / background).</em> These days I spend my time
+        <em>… (current focus).</em> When I'm not working I'm usually <em>… (an interest or
+        two — it makes the page feel human).</em>
+      </p>
+    </div>
+    <div class="facts reveal">
+      <div class="fact"><span class="k">Role</span><span class="v">PhD student</span></div>
+      <div class="fact"><span class="k">At</span><span class="v">UC Berkeley</span></div>
+      <div class="fact"><span class="k">Focus</span><span class="v">Your research area</span></div>
+      <div class="fact"><span class="k">Email</span><span class="v"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="wrap">
+  <div class="section-head reveal">
+    <h2><span class="num">02</span>Featured projects</h2>
+    <a class="section-link" href="{{ '/projects/' | relative_url }}">All projects {% include icon.html name="arrow" %}</a>
+  </div>
+  <div class="card-grid">
+    {% assign featured_projects = site.data.projects | where: "featured", true %}
+    {% for p in featured_projects %}
+    <article class="card reveal">
+      <div class="card-top">
+        <h3>{% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+        <span class="year">{{ p.year }}</span>
+      </div>
+      <p>{{ p.description }}</p>
+      <div class="card-foot">
+        <div class="tags">{% for t in p.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+        {% if p.repo %}<a class="card-link" href="{{ p.repo }}" target="_blank" rel="noopener">Code {% include icon.html name="arrow" %}</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications" class="wrap">
+  <div class="section-head reveal">
+    <h2><span class="num">03</span>Selected publications</h2>
+    <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications {% include icon.html name="arrow" %}</a>
+  </div>
+  <div class="pub-list">
+    {% assign featured_pubs = site.data.publications | where: "featured", true %}
+    {% for pub in featured_pubs %}
+    <article class="pub reveal">
+      <div class="pub-year">{{ pub.year }}</div>
+      <div>
+        <h3>{{ pub.title }}</h3>
+        <p class="authors">{{ pub.authors }}</p>
+        <p class="venue">{{ pub.venue }}</p>
+        {% if pub.links %}
+        <div class="pub-links">
+          {% for l in pub.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section id="writing" class="wrap">
+  <div class="section-head reveal">
+    <h2><span class="num">04</span>Recent writing</h2>
+    <a class="section-link" href="{{ '/blog/' | relative_url }}">All posts {% include icon.html name="arrow" %}</a>
+  </div>
+  <div class="post-list">
+    {% for post in site.posts limit: 3 %}
+    <article class="post-item reveal">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 26 }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      {% for link in site.data.social %}
+        {% if link.show %}
+        <a href="{{ link.url }}" aria-label="{{ link.name }}" title="{{ link.name }}"
+           {% unless link.icon == "email" %}target="_blank" rel="me noopener"{% endunless %}>
+          {% include icon.html name=link.icon %}
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p class="footer-note">
+      &copy; {{ site.time | date: "%Y" }} {{ site.author }}. Built with
+      <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
+    </p>
+  </div>
+</footer>

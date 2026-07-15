@@ -1,0 +1,21 @@
+# Header/footer links. Set `show: false` to hide one, or remove the entry.
+# Icons are inline SVG in _includes/icon.html — names must match there.
+- name: GitHub
+  icon: github
+  url: "https://github.com/johnviljoen"
+  show: true
+
+- name: Email
+  icon: email
+  url: "mailto:john_viljoen@berkeley.edu"
+  show: true
+
+- name: LinkedIn
+  icon: linkedin
+  url: "https://www.linkedin.com/in/johnviljoen"   # TODO: confirm handle
+  show: true
+
+- name: Google Scholar
+  icon: scholar
+  url: "https://scholar.google.com/citations?user=YOUR_ID"  # TODO
+  show: true

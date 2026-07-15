@@ -1,0 +1,32 @@
+---
+layout: default
+title: Publications
+description: Papers and preprints by John Viljoen.
+permalink: /publications/
+---
+
+<div class="page-head wrap">
+  <h1><span class="grad">Publications</span></h1>
+  <p>Papers, preprints, and workshop contributions. Edit these in <code>_data/publications.yml</code>.</p>
+</div>
+
+<section class="wrap">
+  <div class="pub-list">
+    {% assign pubs = site.data.publications | sort: "year" | reverse %}
+    {% for pub in pubs %}
+    <article class="pub reveal">
+      <div class="pub-year">{{ pub.year }}</div>
+      <div>
+        <h3>{{ pub.title }}</h3>
+        <p class="authors">{{ pub.authors }}</p>
+        <p class="venue">{{ pub.venue }}</p>
+        {% if pub.links %}
+        <div class="pub-links">
+          {% for l in pub.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
