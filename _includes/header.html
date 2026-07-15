@@ -1,10 +1,11 @@
+{% assign u = page.url %}
 <header class="site wrap">
   <div class="name">{{ site.title }}</div>
   <div class="role">{{ site.tagline }}</div>
   <nav>
-    <a href="{{ '/#about' | relative_url }}">about</a>
-    <a href="{{ '/#research' | relative_url }}">research</a>
-    <a href="{{ '/#software' | relative_url }}">software</a>
-    <a href="{{ '/#blog' | relative_url }}">blog</a>
+    <a href="{{ '/' | relative_url }}"{% if u == '/' %} class="active"{% endif %}>about</a>
+    <a href="{{ '/research/' | relative_url }}"{% if u contains '/research' %} class="active"{% endif %}>research</a>
+    <a href="{{ '/software/' | relative_url }}"{% if u contains '/software' %} class="active"{% endif %}>software</a>
+    <a href="{{ '/blog/' | relative_url }}"{% if u contains '/blog' %} class="active"{% endif %}>blog</a>
   </nav>
 </header>

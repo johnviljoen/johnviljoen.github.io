@@ -1,0 +1,20 @@
+---
+layout: default
+title: Research
+description: Papers and preprints by John Viljoen.
+permalink: /research/
+---
+
+<h1 class="page-title">Research</h1>
+<ul class="list">
+  {% assign pubs = site.data.research | sort: "year" | reverse %}
+  {% for pub in pubs %}
+  <li>
+    <div class="title">{{ pub.title }}</div>
+    <div class="meta">{{ pub.authors }} · {{ pub.venue }}, {{ pub.year }}</div>
+    {% if pub.links %}<div class="links">{% for l in pub.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}</div>{% endif %}
+  </li>
+  {% else %}
+  <li class="dim">Nothing here yet.</li>
+  {% endfor %}
+</ul>

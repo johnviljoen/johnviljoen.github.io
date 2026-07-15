@@ -1,0 +1,19 @@
+---
+layout: default
+title: Software
+description: Software and projects by John Viljoen.
+permalink: /software/
+---
+
+<h1 class="page-title">Software</h1>
+<ul class="list">
+  {% assign projects = site.data.software | sort: "year" | reverse %}
+  {% for p in projects %}
+  <li>
+    <div class="title">{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %} <span class="meta">· {{ p.year }}</span></div>
+    <div class="desc">{{ p.description }}</div>
+  </li>
+  {% else %}
+  <li class="dim">Nothing here yet.</li>
+  {% endfor %}
+</ul>

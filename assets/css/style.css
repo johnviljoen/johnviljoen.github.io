@@ -53,17 +53,17 @@ nav {
 }
 nav a { color: var(--dim); }
 nav a:hover { color: var(--text); text-decoration: none; }
+nav a.active { color: var(--text); }
 
-/* Sections */
-main { padding: 1rem 0 4rem; }
-section { padding-top: 2.75rem; }
-section > h2 {
+/* Page body */
+main { padding: 2rem 0 3rem; }
+.page-title {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--dim);
   font-weight: 600;
-  margin: 0 0 1rem;
+  margin: 0 0 1.25rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--line);
 }

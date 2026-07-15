@@ -4,52 +4,9 @@ title: John Viljoen
 description: PhD student at UC Berkeley.
 ---
 
-<section id="about">
-  <h2>About</h2>
-  <p>
-    I'm John Viljoen, a PhD student at UC Berkeley. <span class="dim">Replace this
-    with a couple of sentences on what you work on and what you're interested in.</span>
-  </p>
-  <p class="dim">Reach me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
-</section>
-
-<section id="research">
-  <h2>Research</h2>
-  <ul class="list">
-    {% assign pubs = site.data.research | sort: "year" | reverse %}
-    {% for pub in pubs %}
-    <li>
-      <div class="title">{{ pub.title }}</div>
-      <div class="meta">{{ pub.authors }} · {{ pub.venue }}, {{ pub.year }}</div>
-      {% if pub.links %}<div class="links">{% for l in pub.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}</div>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section id="software">
-  <h2>Software</h2>
-  <ul class="list">
-    {% assign projects = site.data.software | sort: "year" | reverse %}
-    {% for p in projects %}
-    <li>
-      <div class="title">{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %} <span class="meta">· {{ p.year }}</span></div>
-      <div class="desc">{{ p.description }}</div>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section id="blog">
-  <h2>Blog</h2>
-  <ul class="posts">
-    {% for post in site.posts %}
-    <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-    {% else %}
-    <li class="dim">No posts yet.</li>
-    {% endfor %}
-  </ul>
-</section>
+<h1 class="page-title">About</h1>
+<p>
+  I'm John Viljoen, a PhD student at UC Berkeley. <span class="dim">Replace this
+  with a couple of sentences on what you work on and what you're interested in.</span>
+</p>
+<p class="dim">Reach me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
