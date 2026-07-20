@@ -71,6 +71,24 @@ main { padding: 2rem 0 3rem; }
 p { margin: 0 0 1rem; }
 .dim { color: var(--dim); }
 
+/* About */
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+}
+@media (max-width: 32rem) {
+  .about { flex-direction: column-reverse; align-items: center; text-align: left; }
+}
+
 /* Simple entry lists (research / software) */
 .list { margin: 0; padding: 0; list-style: none; }
 .list li { margin-bottom: 1.25rem; }
