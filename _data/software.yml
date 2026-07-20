@@ -16,7 +16,7 @@
 
 - title: quadcopter feedback linearization controller
   year: 2024
-  description: Based upon the paper: "Neural-Swarm: Decentralized Close-Proximity Multirotor Control Using Learned Interactions"
+  description: 'Based upon the paper: "Neural-Swarm: Decentralized Close-Proximity Multirotor Control Using Learned Interactions"'
   url: "https://github.com/johnviljoen/quad_feedback_linearization"
 
 - title: hybrid a star python implementation for autonomous parking
