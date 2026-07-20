@@ -1,10 +1,25 @@
 # Software listed under the "Software" section. Newest first (by year).
-- title: sample-project
+- title: jaxipm
   year: 2026
-  description: One line on what it does. Replace with a real project.
-  url: "https://github.com/johnviljoen"
+  description: A complete GPU-batched rewrite of IPOPT for constrained nonlinear optimization in JAX.
+  url: "https://github.com/johnviljoen/jaxipm"
 
-- title: another-project
+- title: spineax
   year: 2025
-  description: Another one-line description.
-  url: "https://github.com/johnviljoen"
+  description: Native bindings for NVIDIA's sparse linear solver package cuDSS in JAX.
+  url: "https://github.com/johnviljoen/spineax"
+
+- title: jax2sympy
+  year: 2025
+  description: System for converting jaxpr's into SymPy expressions to perform symbolic differentiation and recover jacobian and hessian sparsity patterns for JAX functions. This is heavily utilized in my jaxipm package.
+  url: "https://github.com/johnviljoen/jax2sympy"
+
+- title: quadcopter feedback linearization controller
+  year: 2024
+  description: Based upon the paper: "Neural-Swarm: Decentralized Close-Proximity Multirotor Control Using Learned Interactions"
+  url: "https://github.com/johnviljoen/quad_feedback_linearization"
+
+- title: hybrid a star python implementation for autonomous parking
+  year: 2024
+  description: Built a reference hybrid A* implementation for an automous driving piece of research.
+  url: "https://github.com/johnviljoen/hybrid_a_star"

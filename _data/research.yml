@@ -1,18 +1,16 @@
 # Research listed under the "Research" section. Newest first (by year).
-- title: "A placeholder title for your first paper"
-  authors: "J. Viljoen, A. Coauthor"
-  venue: "Conference or Journal"
+- title: "Scaling Nonlinear Optimization: Many Problems One GPU"
+  authors: "J. Viljoen, J. Haffner, M. Tomizuka, N. Mehr"
+  venue: "pending"
   year: 2026
   links:
-    - name: pdf
-      url: "#"
     - name: arXiv
-      url: "#"
+      url: "https://arxiv.org/abs/2606.26341"
 
-- title: "Another representative publication title"
-  authors: "A. Coauthor, J. Viljoen"
-  venue: "Workshop or Journal"
-  year: 2025
+- title: "Differentiable Predictive Control for Robotics: A Data-Driven Predictive Safety Filter Approach"
+  authors: "J. Viljoen, W. Cortez, J. Drgona, S. East, M. Tomizuka, D. Vrabie"
+  # venue: "Workshop or Journal"
+  year: 2024
   links:
-    - name: pdf
-      url: "#"
+    - name: arXiv
+      url: "https://arxiv.org/abs/2409.13817"
